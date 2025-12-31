@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titan+One&family=Merriweather+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <h1>Kilian Frederix</h1>
+    <header class="header">
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#work" class="nav-link">WORK</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+    <aside class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-nav">
+            <a href="#home" class="nav-link active">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#work" class="nav-link">WORK</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+    </aside>
+    <section id="home" class="section">
+        <div class="left-box">
+            <div class="decoration-box-top"></div>
+            <div class="decoration-box-bottom">
+                <a href="#about" class="down-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-move-down-icon lucide-move-down">
+                        <path d="M8 18L12 22L16 18" />
+                        <path d="M12 2V22" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="top-box"></div>
+        <div class="content">
+            <div class="home-image-big"></div>
+            <div class="home-image-small"></div>
+            <p class="intro">I'm a Belgian Student</p>
+            <h1 class="border-title">DEVELOPER</h1>
+            <h1 class="title">& DESIGNER</h1>
+            <div class="description-container">
+                <p class="description">
+                    Welcome to my portfolio! I'm Kilian Frederix, a passionate developer and designer dedicated to
+                    creating
+                    innovative digital experiences. With a strong foundation in both coding and design principles.
+                </p>
+            </div>
+            <div class="buttons-container">
+                <div class="button-box">
+                    <div class="button-background"></div>
+                    <a href="#projects" class="button">Check my latest work</a>
+                </div>
+                <a class="link" href="#contact">HIRE ME</a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kilian-frederix/" target="_blank" class="social-icon">
+                    <div class="icon-background"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon lucide lucide-linkedin-icon lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/kilian_frederix/" target="_blank" class="social-icon">
+                    <div class="icon-background"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon lucide lucide-instagram-icon lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@DJ-vibranic" target="_blank" class="social-icon">
+                    <div class="icon-background"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon lucide lucide-youtube-icon lucide-youtube">
+                        <path
+                        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                        <path d="m10 15 5-3-5-3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
