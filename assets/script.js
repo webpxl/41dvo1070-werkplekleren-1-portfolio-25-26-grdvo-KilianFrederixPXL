@@ -43,6 +43,20 @@ document.querySelectorAll('.down-icon').forEach(arrow => {
 document.querySelectorAll('.top-icon').forEach(arrow => {
     arrow.addEventListener('click', function (event) {
         event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - document.querySelector('.header').offsetHeight,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.scroll-top-icon').forEach(arrow => {
+    arrow.addEventListener('click', function (event) {
+        event.preventDefault();
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
