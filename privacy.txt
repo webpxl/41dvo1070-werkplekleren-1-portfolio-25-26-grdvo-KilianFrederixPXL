@@ -1,0 +1,253 @@
+PRIVACY VERKLARING - PORTFOLIO WEBSITE KILIAN FREDERIX
+
+Laatste update: Januari 2025
+
+================================================================================
+1. ALGEMEEN
+================================================================================
+
+Deze privacy verklaring is van toepassing op de portfolio website van
+Kilian Frederix (hierna: "de website"). De website is ontwikkeld als onderdeel
+van de opleiding Digitale Vormgeving aan PXL Hogeschool en dient als
+persoonlijk portfolio voor educatieve doeleinden.
+
+Verantwoordelijke voor gegevensverwerking:
+- Naam: Kilian Frederix
+- Opleiding: Digitale Vormgeving, PXL Hogeschool
+- E-mail: [Vul je PXL e-mailadres in]
+
+================================================================================
+2. WELKE GEGEVENS VERZAMELEN WIJ?
+================================================================================
+
+2.1 GEGEVENS DIE U ZELF VERSTREKT
+
+Wanneer u het contactformulier op deze website gebruikt, vragen wij u om
+de volgende informatie te verstrekken:
+- Naam
+- E-mailadres
+- Bericht/vraag
+
+Deze gegevens worden alleen verzameld wanneer u het contactformulier vrijwillig
+invult en verstuurt.
+
+2.2 AUTOMATISCH VERZAMELDE GEGEVENS
+
+Deze website verzamelt GEEN automatische gegevens zoals:
+- IP-adressen
+- Browserinformatie
+- Cookies
+- Gebruikersgedrag of tracking
+
+Wij gebruiken geen analytics tools zoals Google Analytics of soortgelijke
+diensten op deze website.
+
+2.3 EXTERNE DIENSTEN
+
+Deze website maakt gebruik van de volgende externe diensten:
+
+a) Google Fonts
+   - Voor het laden van lettertypen (Titan One & Merriweather Sans)
+   - Privacy policy: https://policies.google.com/privacy
+   - Opmerking: Google Fonts kan beperkte gegevens verzamelen
+
+b) Bootstrap CDN
+   - Voor het laden van CSS framework
+   - Privacy policy: zie BootstrapCDN/jsDelivr voorwaarden
+
+c) Social Media Links
+   - De website bevat links naar externe social media profielen:
+     * LinkedIn (kilian-frederix)
+     * Instagram (kilian_frederix)
+     * YouTube (DJ-vibranic)
+   - Bij het klikken op deze links verlaat u deze website
+   - Privacy policies van deze platforms zijn van toepassing
+
+================================================================================
+3. WAARVOOR GEBRUIKEN WIJ UW GEGEVENS?
+================================================================================
+
+De gegevens die u via het contactformulier verstrekt, gebruiken wij uitsluitend
+voor de volgende doeleinden:
+
+- Het beantwoorden van uw vraag of bericht
+- Contact met u opnemen voor professionele doeleinden (indien relevant)
+- Het verbeteren van de website (op basis van feedback)
+
+Wij gebruiken uw gegevens NIET voor:
+- Marketing doeleinden
+- Commerciële doeleinden
+- Doorverkoop aan derden
+- Geautomatiseerde besluitvorming of profiling
+
+================================================================================
+4. HOE LANG BEWAREN WIJ UW GEGEVENS?
+================================================================================
+
+Gegevens die via het contactformulier worden verzonden, worden bewaard
+zolang dit noodzakelijk is voor het doel waarvoor ze zijn verzameld:
+
+- Contactformulier gegevens: maximaal 1 jaar na laatste contact
+- Na deze periode worden gegevens verwijderd, tenzij u aangeeft dat
+  u op de hoogte wilt blijven van updates
+
+U kunt op elk moment verzoeken om uw gegevens te verwijderen
+(zie sectie 7: Uw rechten).
+
+================================================================================
+5. BEVEILIGING VAN UW GEGEVENS
+================================================================================
+
+Wij nemen de beveiliging van uw gegevens serieus en treffen passende
+technische en organisatorische maatregelen:
+
+- De website gebruikt HTTPS encryptie (indien gehost met SSL certificaat)
+- Toegang tot contactformulier gegevens is beperkt
+- Geen gegevens worden opgeslagen in publieke databases
+- Geen gebruik van cookies of tracking
+
+Let op: Deze website is gemaakt voor educatieve doeleinden. Voor professionele
+projecten raden wij aan extra beveiligingsmaatregelen te treffen.
+
+================================================================================
+6. DELEN VAN GEGEVENS MET DERDEN
+================================================================================
+
+Wij delen uw persoonlijke gegevens NIET met derden, behalve:
+
+a) Wanneer dit wettelijk verplicht is
+b) Met uw expliciete toestemming
+c) Met hosting providers (alleen noodzakelijk voor technische werking)
+
+Wij verkopen of verhuren uw gegevens nooit aan externe partijen.
+
+================================================================================
+7. UW RECHTEN (AVG/GDPR)
+================================================================================
+
+Conform de Algemene Verordening Gegevensbescherming (AVG/GDPR) heeft u
+de volgende rechten:
+
+a) RECHT OP INZAGE
+   U heeft het recht om te weten welke gegevens wij van u hebben.
+
+b) RECHT OP RECTIFICATIE
+   U kunt vragen om onjuiste gegevens te corrigeren.
+
+c) RECHT OP VERWIJDERING (recht op vergetelheid)
+   U kunt vragen om uw gegevens te verwijderen.
+
+d) RECHT OP BEPERKING VAN VERWERKING
+   U kunt vragen om de verwerking van uw gegevens te beperken.
+
+e) RECHT OP GEGEVENSOVERDRACHT
+   U kunt uw gegevens in een gestructureerd formaat opvragen.
+
+f) RECHT OP BEZWAAR
+   U kunt bezwaar maken tegen de verwerking van uw gegevens.
+
+Om deze rechten uit te oefenen, kunt u contact met ons opnemen via:
+- E-mail: [Vul je PXL e-mailadres in]
+- LinkedIn: https://www.linkedin.com/in/kilian-frederix/
+
+Wij reageren binnen 30 dagen op uw verzoek.
+
+================================================================================
+8. COOKIES
+================================================================================
+
+Deze website gebruikt GEEN cookies voor:
+- Tracking
+- Analytics
+- Marketing
+- Advertenties
+
+Externe diensten zoals Google Fonts of Bootstrap CDN kunnen beperkte
+technische cookies plaatsen die noodzakelijk zijn voor hun functionaliteit.
+
+================================================================================
+9. LINKS NAAR EXTERNE WEBSITES
+================================================================================
+
+Deze website bevat links naar externe websites:
+- LinkedIn profiel
+- Instagram profiel
+- YouTube kanaal (DJ Vibranic)
+
+Wij zijn niet verantwoordelijk voor de privacy practices van deze externe
+websites. Wij raden u aan om de privacy verklaringen van deze platforms
+te raadplegen:
+
+- LinkedIn: https://www.linkedin.com/legal/privacy-policy
+- Instagram: https://help.instagram.com/privacy/
+- YouTube: https://policies.google.com/privacy
+
+================================================================================
+10. WIJZIGINGEN IN DEZE PRIVACY VERKLARING
+================================================================================
+
+Wij behouden ons het recht voor om deze privacy verklaring te wijzigen.
+Wijzigingen worden gepubliceerd op deze pagina met een nieuwe "Laatste update"
+datum.
+
+Wij raden u aan deze privacy verklaring regelmatig te raadplegen om op de
+hoogte te blijven van eventuele wijzigingen.
+
+================================================================================
+11. KLACHTEN
+================================================================================
+
+Als u niet tevreden bent met de manier waarop wij met uw gegevens omgaan,
+heeft u het recht om een klacht in te dienen bij de Belgische
+Gegevensbeschermingsautoriteit (GBA):
+
+Gegevensbeschermingsautoriteit
+Drukpersstraat 35
+1000 Brussel
+België
+
+Tel: +32 (0)2 274 48 00
+E-mail: contact@apd-gba.be
+Website: https://www.gegevensbeschermingsautoriteit.be/
+
+================================================================================
+12. CONTACT
+================================================================================
+
+Voor vragen over deze privacy verklaring of over de verwerking van uw
+persoonlijke gegevens, kunt u contact met ons opnemen:
+
+Kilian Frederix
+Opleiding: Digitale Vormgeving, PXL Hogeschool
+E-mail: [Vul je PXL e-mailadres in]
+LinkedIn: https://www.linkedin.com/in/kilian-frederix/
+
+================================================================================
+13. EDUCATIEF DOEL
+================================================================================
+
+BELANGRIJKE OPMERKING:
+
+Deze website is ontwikkeld als onderdeel van een educatief project voor
+het vak Werkplekleren 1 (WPL1) binnen de opleiding Digitale Vormgeving
+aan PXL Hogeschool.
+
+De website dient als:
+- Persoonlijk portfolio
+- Demonstratie van technische vaardigheden
+- Reflectie op het leerproces
+
+Hoewel deze privacy verklaring is opgesteld volgens de AVG/GDPR richtlijnen,
+is de website primair bedoeld voor educatieve doeleinden en niet voor
+commercieel gebruik.
+
+Voor professionele projecten na de opleiding zal een uitgebreidere
+privacy policy worden geïmplementeerd met aanvullende beveiligingsmaatregelen.
+
+================================================================================
+
+© 2025 Kilian Frederix - Portfolio Website
+Ontwikkeld voor PXL Hogeschool - Digitale Vormgeving
+
+Deze privacy verklaring is voor het laatst bijgewerkt op: Januari 2025
+Versie: 1.0

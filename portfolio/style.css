@@ -1,0 +1,429 @@
+/* ------------------------------------ GLOBAL STYLES ---------------------------------------- */
+:root {
+    --bg-color: #EBE6C8;
+    --primary-color: #478c9a;
+    --secondary-color: #D7A24D;
+    --accent-color: #CC403B;
+    --cards-color: #E2CD96;
+    --border-color: #141615;
+    --text-light-color: #FFFFFF;
+    --text-dark-color: #453E3B;
+    --primary-font: 'Titan One', cursive;
+    --secondary-font: 'Merriweather Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark-color);
+    font-family: var(--secondary-font);
+    line-height: 1.6;
+}
+
+/* ------------------------------------ HEADER ---------------------------------------- */
+.portfolio-header {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    padding: 30px 0;
+    border-bottom: 4px solid var(--border-color);
+}
+
+.portfolio-header h1 {
+    font-family: var(--primary-font);
+    font-size: clamp(28px, 5vw, 48px);
+    margin: 0;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-link {
+    color: var(--text-light-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    align-self: flex-start;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+    text-decoration: underline;
+}
+
+/* ------------------------------------ MAIN CONTENT ---------------------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* ------------------------------------ SECTIONS ---------------------------------------- */
+.intro-section {
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--cards-color);
+    border: 4px solid var(--border-color);
+}
+
+.intro-section h2 {
+    font-family: var(--primary-font);
+    font-size: clamp(24px, 4vw, 36px);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--primary-font);
+    font-size: clamp(28px, 5vw, 42px);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.section-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* ------------------------------------ DVO PROFILE SECTION ---------------------------------------- */
+.dvo-profile-section {
+    margin-bottom: 80px;
+}
+
+.role-card {
+    background-color: var(--cards-color);
+    border: 4px solid var(--border-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px rgba(20, 22, 21, 0.3);
+}
+
+.role-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.role-number {
+    font-family: var(--primary-font);
+    font-size: 48px;
+    color: var(--secondary-color);
+    line-height: 1;
+}
+
+.role-title {
+    font-family: var(--primary-font);
+    font-size: clamp(24px, 4vw, 32px);
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.role-description {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: var(--text-dark-color);
+}
+
+.learning-goals h4 {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--text-dark-color);
+    margin-bottom: 20px;
+}
+
+.goal {
+    background-color: var(--bg-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.goal strong {
+    color: var(--primary-color);
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.goal p {
+    margin: 8px 0;
+}
+
+.goal .progress {
+    background-color: rgba(71, 140, 154, 0.1);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.goal .progress strong {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+/* ------------------------------------ REFLECTION SECTION ---------------------------------------- */
+.reflection-section {
+    margin-bottom: 80px;
+}
+
+.reflection-card {
+    background-color: var(--cards-color);
+    border: 4px solid var(--border-color);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.reflection-title {
+    font-family: var(--primary-font);
+    font-size: clamp(22px, 4vw, 28px);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.reflection-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.aim-section {
+    margin-bottom: 40px;
+}
+
+.aim-section h4 {
+    font-family: var(--secondary-font);
+    font-size: 22px;
+    color: var(--text-dark-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.aim-letter {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--border-color);
+}
+
+.placeholder-text {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border: 2px dashed var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 100px;
+}
+
+.example-box {
+    background-color: rgba(71, 140, 154, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.example-box strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.takeaways-box {
+    background-color: var(--bg-color);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.takeaways-box h4 {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.takeaways-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.takeaways-box li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: var(--cards-color);
+    border-left: 4px solid var(--secondary-color);
+    font-size: 16px;
+}
+
+.xfactor-content {
+    margin-top: 20px;
+}
+
+/* ------------------------------------ PDF SECTION ---------------------------------------- */
+.pdf-section {
+    margin-bottom: 60px;
+}
+
+.pdf-download-box {
+    background-color: var(--cards-color);
+    border: 4px solid var(--border-color);
+    padding: 30px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-dark-color);
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 16px rgba(20, 22, 21, 0.3);
+}
+
+.pdf-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-dark-color);
+    font-style: italic;
+}
+
+/* ------------------------------------ FOOTER ---------------------------------------- */
+.portfolio-footer {
+    background-color: var(--border-color);
+    color: var(--text-light-color);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+.portfolio-footer p {
+    margin: 5px 0;
+}
+
+.portfolio-footer a {
+    color: var(--text-light-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.portfolio-footer a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* ------------------------------------ RESPONSIVE ---------------------------------------- */
+@media (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .back-link {
+        align-self: center;
+    }
+
+    .portfolio-header h1 {
+        text-align: left;
+    }
+
+    .role-card {
+        padding: 40px;
+    }
+
+    .reflection-card {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding: 60px 20px;
+    }
+
+    .intro-section {
+        padding: 60px 40px;
+    }
+}
+
+/* ------------------------------------ PRINT STYLES ---------------------------------------- */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .portfolio-header,
+    .portfolio-footer,
+    .back-link,
+    .pdf-section {
+        display: none;
+    }
+
+    .role-card,
+    .reflection-card {
+        page-break-inside: avoid;
+        border: 2px solid black;
+    }
+
+    .example-box {
+        display: none;
+    }
+}
