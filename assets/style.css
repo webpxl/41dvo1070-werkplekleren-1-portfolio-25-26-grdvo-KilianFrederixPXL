@@ -288,32 +288,6 @@ body.menu-open .mobile-drawer {
     display: flex;
 }
 
-.profile-image {
-    position: absolute;
-    overflow: hidden;
-    top: 265px;
-    right: 20px;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
-}
-
-.home-graphic-mobile {
-    width: 100%;
-    margin-bottom: 30px;
-    z-index: 1;
-}
-
-.about-graphic-mobile {
-    width: 100%;
-    height: 200px;
-    z-index: -1;
-}
-
-.graphic-desktop {
-    display: none;
-}
-
 .intro {
     font-size: clamp(16px, 6vw + 1rem, 20px);
     padding: 0 20px 0 20px;
@@ -349,6 +323,16 @@ body.menu-open .mobile-drawer {
     align-items: center;
 }
 
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
 .description {
     margin: 0;
     font-size: clamp(16px, 4vw + 1rem, 18px);
@@ -367,9 +351,9 @@ body.menu-open .mobile-drawer {
 .buttons-container {
     display: flex;
     flex-direction: row;
-    padding: 0 20px 0 20px;
     justify-content: space-between;
-    width: 100%;
+    width: calc(2 * 150px + 20px);
+    margin: 0 auto;
 }
 
 .button-box {
@@ -503,29 +487,6 @@ body.menu-open .mobile-drawer {
     box-shadow: 8px 8px 12px rgba(20, 22, 21, 0.3);
 }
 
-.see-all-btn-container {
-    display: flex;
-    justify-content: end;
-    padding-right: 4px;
-    padding: 0 20px 0 20px;
-    width: 100%;
-}
-
-.see-all-btn {
-    text-decoration: none;
-    color: var(--text-light-color);
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    z-index: 1;
-    transition: all 0.3s ease, transform 0.3s ease;
-}
-
-.see-all-btn:hover {
-    color: var(--text-dark-color);
-    box-shadow: 10px 10px 16px rgba(20, 22, 21, 0.3);
-}
 
 .previous-btn {
     text-decoration: none;
@@ -560,29 +521,27 @@ body.menu-open .mobile-drawer {
     box-shadow: 10px 10px 16px rgba(20, 22, 21, 0.3);
 }
 
-.projects-container, .work-container {
+.projects-container, .work-container, .hobbies-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .project-card, .work-card, .hobby-card {
     border: 4px solid var(--border-color);
-    padding: 20px;
     height: 300px;
-    width: 100%;
     max-width: 300px;
+    width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
     overflow: hidden;
 }
 
-.project-card:nth-child(n+2), .work-card:nth-child(n+2), .hobby-card:nth-child(n+2) {
-    display: none;
-}
 
 .project-card:hover, .work-card:hover, .hobby-card:hover {
     transform: scale(1.01);
@@ -596,8 +555,6 @@ body.menu-open .mobile-drawer {
     width: 100%;
     height: 120px;
     background-color: var(--bg-color);
-    border: 2px solid var(--border-color);
-    margin-bottom: 5px;
     overflow: hidden;
 }
 
@@ -611,6 +568,14 @@ body.menu-open .mobile-drawer {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    padding: 15px 15px 0 15px;
 }
 
 .project-title {
@@ -637,12 +602,12 @@ body.menu-open .mobile-drawer {
     line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    flex-grow: 1;
 }
 
 .project-meta {
     display: flex;
     gap: 8px;
+    padding: 10px 15px 15px 15px;
     flex-wrap: wrap;
     margin-top: auto;
 }
@@ -657,12 +622,84 @@ body.menu-open .mobile-drawer {
     white-space: nowrap;
 }
 
+/* -------------------------------------------- WORK CARDS ------------------------------------------ */
+
+.work-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+}
+
+.work-image svg {
+    stroke: var(--primary-color);
+    opacity: 0.8;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+    padding: 15px 15px 0 15px;
+}
+
+.work-title {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    color: var(--text-dark-color);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.work-company {
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+.work-description {
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    color: var(--text-dark-color);
+    margin: 0;
+    margin-top: 8px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.work-meta {
+    display: flex;
+    gap: 8px;
+    padding: 10px 15px 15px 15px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.work-tag {
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    background-color: var(--secondary-color);
+    color: var(--text-light-color);
+    padding: 4px 10px;
+    border: 2px solid var(--border-color);
+    white-space: nowrap;
+}
+
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
     margin-top: 20px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     gap: 20px;
 }
 
@@ -673,6 +710,11 @@ body.menu-open .mobile-drawer {
     max-width: 170px;
     height: 170px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .skill-card:hover {
@@ -680,9 +722,25 @@ body.menu-open .mobile-drawer {
     box-shadow: 10px 10px 16px rgba(20, 22, 21, 0.3);
 }
 
-.skill-card:nth-child(n+5) {
-    display: none;
+.skill-card svg {
+    stroke: var(--primary-color);
+    transition: all 0.3s ease;
 }
+
+.skill-card:hover svg {
+    stroke: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.skill-card h3 {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    color: var(--text-dark-color);
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
 
 .contact-container {
     margin-top: 100px;
@@ -745,10 +803,6 @@ body.menu-open .mobile-drawer {
         margin-bottom: 10px;
     }
 
-    .home-graphic-mobile {
-        display: none;
-    }
-
     .hamburger {
         display: none;
     }
@@ -765,10 +819,6 @@ body.menu-open .mobile-drawer {
         gap: 30px;
     }
 
-    .about-graphic-mobile {
-        display: none;
-    }
-
     .description-container {
         display: flex;
         justify-content: space-between;
@@ -780,32 +830,27 @@ body.menu-open .mobile-drawer {
         width: 60%;
     }
 
-    .skill-card:nth-child(n+5) {
-        display: block;
+    .profile-picture {
+        width: 180px;
+        height: 180px;
     }
 
     .skills-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .projects-container, .work-container {
-        justify-content: space-evenly;
-        gap: 20px;
-    }
-
-    .project-card:nth-child(n+4), .work-card:nth-child(n+4), .hobby-card:nth-child(n+4) {
-        display: block;
+        grid-template-columns: repeat(4, 150px);
     }
 
     .list-container {
         display: flex;
         margin-bottom: 40px;
     }
-        
 }
 
 @media (min-width: 1024px) {
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+
     .right-box {
         width: 250px;
     }
@@ -831,7 +876,8 @@ body.menu-open .mobile-drawer {
     }
 
     .buttons-container {
-        margin: 20px 0 10px 0;
+        margin: 20px auto 20px auto;
+        width: calc(4 * 150px + 3 * 20px);
     }
 
     .border-title {
@@ -845,49 +891,23 @@ body.menu-open .mobile-drawer {
 }
 
 @media (min-width: 1200px) {
-    .graphic-desktop {
-        display: block;
-        width: 70%;
-        height: 200px;
-        border: 4px solid var(--border-color);
-    }
-
     .list-container {
         gap: 20px;
-    }
-
-    .project-card:nth-child(n+3), .work-card:nth-child(n+3), .hobby-card:nth-child(n+3) {
-        display: block;
-    }
-
-    .button-container {
-        width: 60%;
     }
 }
 
 @media (min-width: 1440px) {
-    .project-card:nth-child(n+2), .work-card:nth-child(n+2), .hobby-card:nth-child(n+2) {
-        display: block;
-    }
-
-    .skill-card:nth-child(n+5) {
-        display: block;
-    }
-
     .skills-container {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 150px);
+    }
+
+    .buttons-container {
+        width: calc(6 * 150px + 5 * 20px);
+        margin: 20px auto 40px auto;
     }
 }
 
 /* -------------------------------------------- HOBBIES SECTION ------------------------------------------ */
-.hobbies-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 20px;
-    margin: 30px 0;
-}
 
 .hobby-card {
     border: 4px solid var(--border-color);
@@ -1023,6 +1043,11 @@ body.menu-open .mobile-drawer {
     .hobby-description {
         -webkit-line-clamp: 8;
         line-clamp: 8;
+    }
+
+    .profile-picture {
+        width: 300px;
+        height: 300px;
     }
 }
 

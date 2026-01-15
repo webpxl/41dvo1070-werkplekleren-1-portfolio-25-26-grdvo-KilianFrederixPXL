@@ -157,3 +157,146 @@ function changeActiveLink() {
 }
 
 window.addEventListener('scroll', changeActiveLink);
+
+// -------------------------------------------- CAROUSEL FUNCTIONALITY --------------------------------------------
+
+function initCarousel(containerSelector, cardSelector, prevBtnSelector, nextBtnSelector, cardsPerPageConfig) {
+    const section = document.querySelector(containerSelector)?.closest('.section');
+    if (!section) return;
+
+    const container = section.querySelector(containerSelector);
+    const cards = container?.querySelectorAll(cardSelector);
+    const prevBtn = section.querySelector(prevBtnSelector);
+    const nextBtn = section.querySelector(nextBtnSelector);
+
+    if (!container || !cards || cards.length === 0 || !prevBtn || !nextBtn) return;
+
+    let currentPage = 0;
+
+    // Default config or custom config
+    const config = cardsPerPageConfig || {
+        1440: 6,
+        1200: 4,
+        768: 4,
+        0: 2
+    };
+
+    function getCardsPerPage() {
+        const width = window.innerWidth;
+        const breakpoints = Object.keys(config).map(Number).sort((a, b) => b - a);
+        for (const bp of breakpoints) {
+            if (width >= bp) return config[bp];
+        }
+        return 2;
+    }
+
+    function getTotalPages() {
+        const cardsPerPage = getCardsPerPage();
+        return Math.ceil(cards.length / cardsPerPage);
+    }
+
+    function updateCarousel() {
+        const cardsPerPage = getCardsPerPage();
+        const startIndex = currentPage * cardsPerPage;
+        const endIndex = startIndex + cardsPerPage;
+
+        cards.forEach((card, index) => {
+            if (index >= startIndex && index < endIndex) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Update button states
+        prevBtn.disabled = currentPage === 0;
+        nextBtn.disabled = currentPage >= getTotalPages() - 1;
+
+        prevBtn.style.opacity = currentPage === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = currentPage >= getTotalPages() - 1 ? '0.5' : '1';
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentPage < getTotalPages() - 1) {
+            currentPage++;
+            updateCarousel();
+        }
+    });
+
+    // Reset on resize
+    window.addEventListener('resize', () => {
+        const totalPages = getTotalPages();
+        if (currentPage >= totalPages) {
+            currentPage = Math.max(0, totalPages - 1);
+        }
+        updateCarousel();
+    });
+
+    // Initial update
+    updateCarousel();
+}
+
+// Initialize carousels for each section
+document.addEventListener('DOMContentLoaded', () => {
+    // Skills: 12 on large desktop (6x2), 8 on tablet (4x2), 4 on mobile (2x2)
+    const skillsConfig = { 1440: 12, 768: 8, 0: 4 };
+    initCarousel('.skills-container', '.skill-card', '.previous-btn', '.next-btn', skillsConfig);
+
+    // Hobbies, Projects, Work: 4 on desktop/tablet, 1 on mobile
+    const cardsConfig = { 768: 4, 0: 1 };
+    initCarousel('.hobbies-container', '.hobby-card', '.previous-btn', '.next-btn', cardsConfig);
+    initCarousel('.projects-container', '.project-card', '.previous-btn', '.next-btn', cardsConfig);
+    initCarousel('.work-container', '.work-card', '.previous-btn', '.next-btn', cardsConfig);
+});
+
+// -------------------------------------------- CONTACT FORM --------------------------------------------
+
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                submitBtn.textContent = 'Message Sent!';
+                submitBtn.style.backgroundColor = '#4CAF50';
+                contactForm.reset();
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            submitBtn.textContent = 'Error - Try Again';
+            submitBtn.style.backgroundColor = '#CC403B';
+            submitBtn.disabled = false;
+
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
+        }
+    });
+}
