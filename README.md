@@ -10,10 +10,10 @@ De website toont mijn vaardigheden als developer en designer en bevat projecten,
 
 ## Links
 
-- **Live website:** [URL hier invullen na deployment]
+- **Live website:** [https://kilianfrederixdvoportfolio.netlify.app/](https://kilianfrederixdvoportfolio.netlify.app/)
 - **GitHub Repository:** [https://github.com/PXL-DVO-1CMO-1CDS/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-KilianFrederixPXL](https://github.com/PXL-DVO-1CMO-1CDS/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-KilianFrederixPXL)
-- **Figma Design:** [URL hier invullen]
-- **Portfolio Reflectie:** [www.jouwurl.be/portfolio/](portfolio/index.html)
+- **Figma Design:** [https://www.figma.com/design/T3SbmXQ1tJg98uF07uNZao/portfolio](https://www.figma.com/design/T3SbmXQ1tJg98uF07uNZao/portfolio?node-id=0-1&t=LmYoKal8TpIB88k2-1)
+- **Portfolio Reflectie:** [https://kilianfrederixdvoportfolio.netlify.app/portfolio/](https://kilianfrederixdvoportfolio.netlify.app/portfolio/)
 
 ---
 
@@ -214,9 +214,8 @@ Default styling
 ## Deployment
 
 Deze website wordt gehost via:
-- [ ] **GitHub Pages** - [Link hier invullen na deployment]
-- [ ] **Netlify** - [Link hier invullen na deployment]
-- [ ] **Andere:** [Specificeer]
+- [ ] **GitHub Pages**
+- [x] **Netlify** - [https://kilianfrederixdvoportfolio.netlify.app/](https://kilianfrederixdvoportfolio.netlify.app/)
 
 ### Deployment Instructies:
 
@@ -278,8 +277,8 @@ Bedankt aan:
 
 ---
 
-**Laatste update:** Januari 2025
+**Laatste update:** Januari 2026
 
 **Versie:** 1.0
 
-**Status:** In ontwikkeling
+**Status:** Afgerond
